@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #4169e1;
+  background-color: #202939;
   color: #fff;
   padding: 1.1em;
   display: flex;
@@ -54,7 +54,7 @@ main .main-section p {
   animation: textAnime 2s infinite alternate;
 }
 main .main-section .register-btn {
-  background-color: #4169e1;
+  background-color: #202939;
   color: #fff;
   cursor: pointer;
   padding: 1.3em;
@@ -75,7 +75,7 @@ main .main-section .register-btn:hover {
   }
 }
 .secondary-section {
-  background-color: #93e380;
+  background-color: #9aa4b2;
   color: #fff;
   padding: 1.5em;
   text-align: center;
@@ -92,13 +92,13 @@ main .main-section .register-btn:hover {
   padding: 0;
 }
 .secondary-section .style-list ul li {
-  background-color: #4dd470;
+  background-color: #4b5565;
   padding: 0.7em;
   border-radius: 6px;
 }
 
 footer {
-  background-color: #4169e1;
+  background-color: #202939;
   color: #fff;
   text-align: center;
   padding: 0.5em;
