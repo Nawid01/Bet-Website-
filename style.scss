@@ -1,0 +1,128 @@
+$primary-color: #4169e1;
+$seconddary-color: #af1631;
+$style-color: #4dd470;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-left {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          &:hover {
+            color: $seconddary-color;
+          }
+        }
+      }
+    }
+  }
+}
+.login-button {
+  background-color: $seconddary-color;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken(#75082e, 10%);
+  }
+}
+main {
+  .main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+
+    p {
+      font-size: 1rem;
+      animation: textAnime 2s infinite alternate;
+    }
+    .register-btn {
+      background-color: $primary-color;
+      color: #fff;
+      cursor: pointer;
+      padding: 1.3em;
+      border-radius: 8px;
+
+      transition: all 0.4s linear;
+
+      &:hover {
+        background-color: $seconddary-color;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@keyframes textAnime {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.secondary-section {
+  background-color: #93e380;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+  margin-bottom: 66px;
+  .style-list {
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 50px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+
+      li {
+        background-color: $style-color;
+        padding: 0.7em;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  // Statt width: 100%;
+  // left: 0;
+  // right: 0;
+  border-top: 7px solid orange;
+}
